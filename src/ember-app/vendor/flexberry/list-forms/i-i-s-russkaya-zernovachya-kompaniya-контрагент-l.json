@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-контрагент-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-контрагент-e",
+  "external": false,
+  "caption": "Контрагент",
+  "name": "IISRusskaya_zernovachya_kompaniyaКонтрагентL",
+  "className": "КонтрагентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-контрагент",
+      "modelProjection": "КонтрагентL"
+    }
+  ]
+}

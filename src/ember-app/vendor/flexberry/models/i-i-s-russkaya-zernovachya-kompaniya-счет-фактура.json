@@ -1,0 +1,274 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaСчетФактура",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура",
+  "className": "СчетФактура",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаЗаполн",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заказ",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контрагент",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-контрагент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "склад",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СчетФактураE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполн",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимОрг",
+          "lookupValueField": "наимОрг",
+          "relationName": "Контрагент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимОрг",
+              "caption": "Наим орг",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Контрагент",
+          "name": "контрагент",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-контрагент",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ДатаОтгрузки",
+          "lookupValueField": "датаОтгрузки",
+          "relationName": "Заказ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаОтгрузки",
+              "caption": "Дата отгрузки",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Заказ",
+          "name": "заказ",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Склад",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Склад",
+          "name": "склад",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Emile",
+          "lookupValueField": "emile",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "emile",
+              "caption": "Emile",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СчетФактураL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура",
+      "attrs": [
+        {
+          "name": "датаЗаполн",
+          "caption": "Дата заполн",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Контрагент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимОрг",
+              "caption": "Наим орг",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим орг",
+          "name": "контрагент",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-контрагент",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Заказ",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаОтгрузки",
+              "caption": "Дата отгрузки",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата отгрузки",
+          "name": "заказ",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Склад",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "склад",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "emile",
+              "caption": "Emile",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Emile",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

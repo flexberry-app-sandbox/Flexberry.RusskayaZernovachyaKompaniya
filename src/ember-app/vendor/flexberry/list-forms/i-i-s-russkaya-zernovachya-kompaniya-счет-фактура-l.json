@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e",
+  "external": false,
+  "caption": "Счет фактура",
+  "name": "IISRusskaya_zernovachya_kompaniyaСчетФактураL",
+  "className": "СчетФактураL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура",
+      "modelProjection": "СчетФактураL"
+    }
+  ]
+}

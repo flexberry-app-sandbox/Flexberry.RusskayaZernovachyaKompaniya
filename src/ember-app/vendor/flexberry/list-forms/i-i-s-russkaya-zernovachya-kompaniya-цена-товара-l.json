@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара-e",
+  "external": false,
+  "caption": "Цена товара",
+  "name": "IISRusskaya_zernovachya_kompaniyaЦенаТовараL",
+  "className": "ЦенаТовараL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+      "modelProjection": "ЦенаТовараL"
+    }
+  ]
+}

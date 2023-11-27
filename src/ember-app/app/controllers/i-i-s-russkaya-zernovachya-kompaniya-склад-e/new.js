@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaСкладEController from '../i-i-s-russkaya-zernovachya-kompaniya-склад-e';
+
+var IISRusskaya_zernovachya_kompaniyaСкладENewController = IISRusskaya_zernovachya_kompaniyaСкладEController;
+export default IISRusskaya_zernovachya_kompaniyaСкладENewController;

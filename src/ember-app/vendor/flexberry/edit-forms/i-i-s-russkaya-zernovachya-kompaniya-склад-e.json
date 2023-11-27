@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Склад",
+  "name": "IISRusskaya_zernovachya_kompaniyaСкладE",
+  "className": "СкладE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+      "modelProjection": "СкладE"
+    }
+  ]
+}

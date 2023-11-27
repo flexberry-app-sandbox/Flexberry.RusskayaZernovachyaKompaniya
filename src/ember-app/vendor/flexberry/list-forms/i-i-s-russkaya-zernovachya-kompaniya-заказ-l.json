@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-заказ-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-заказ-e",
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISRusskaya_zernovachya_kompaniyaЗаказL",
+  "className": "ЗаказL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+      "modelProjection": "ЗаказL"
+    }
+  ]
+}

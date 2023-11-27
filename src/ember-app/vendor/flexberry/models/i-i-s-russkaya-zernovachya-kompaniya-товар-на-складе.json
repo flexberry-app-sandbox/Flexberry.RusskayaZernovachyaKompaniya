@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaТоварНаСкладе",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе",
+  "className": "ТоварНаСкладе",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "склад",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварНаСкладеE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Описание",
+          "lookupValueField": "описание",
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описание",
+              "caption": "Описание",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "Склад",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Склад",
+          "name": "склад",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварНаСкладеL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описание",
+              "caption": "Описание",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Описание",
+          "name": "товар",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Склад",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес",
+          "name": "склад",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

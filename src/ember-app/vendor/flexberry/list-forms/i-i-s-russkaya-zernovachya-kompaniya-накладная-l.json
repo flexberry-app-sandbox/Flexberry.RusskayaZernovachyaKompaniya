@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-накладная-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-накладная-e",
+  "external": false,
+  "caption": "Накладная",
+  "name": "IISRusskaya_zernovachya_kompaniyaНакладнаяL",
+  "className": "НакладнаяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+      "modelProjection": "НакладнаяL"
+    }
+  ]
+}

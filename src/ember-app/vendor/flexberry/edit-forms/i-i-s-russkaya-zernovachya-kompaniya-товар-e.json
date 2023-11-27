@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ТЧСчФактуры",
+      "projection": "ТЧСчФактурыL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗаписьВНакл",
+      "projection": "ЗаписьВНаклL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "КатегорияТовара",
+      "projection": "КатегорияТовараL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Товар",
+  "name": "IISRusskaya_zernovachya_kompaniyaТоварE",
+  "className": "ТоварE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "modelProjection": "ТоварE"
+    }
+  ]
+}

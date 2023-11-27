@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaТЧСчФактуры",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+  "className": "ТЧСчФактуры",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧСчФактурыE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧСчФактурыL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

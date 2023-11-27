@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaЗаписьВНакл",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+  "className": "ЗаписьВНакл",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаписьВНаклE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаписьВНаклL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

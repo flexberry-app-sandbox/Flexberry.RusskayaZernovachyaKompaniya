@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaКатегорияТовараEController from '../i-i-s-russkaya-zernovachya-kompaniya-категория-товара-e';
+
+var IISRusskaya_zernovachya_kompaniyaКатегорияТовараENewController = IISRusskaya_zernovachya_kompaniyaКатегорияТовараEController;
+export default IISRusskaya_zernovachya_kompaniyaКатегорияТовараENewController;

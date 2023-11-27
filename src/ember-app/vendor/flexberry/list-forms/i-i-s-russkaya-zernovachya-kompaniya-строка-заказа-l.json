@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-строка-заказа-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-строка-заказа-e",
+  "external": false,
+  "caption": "Строка заказа",
+  "name": "IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаL",
+  "className": "СтрокаЗаказаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-строка-заказа",
+      "modelProjection": "СтрокаЗаказаL"
+    }
+  ]
+}

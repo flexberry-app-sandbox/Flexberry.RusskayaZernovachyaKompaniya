@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaЦенаТовара",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+  "className": "ЦенаТовара",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаНачала",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОконч",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧСчФактуры",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЦенаТовараE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Описание",
+          "lookupValueField": "описание",
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описание",
+              "caption": "Описание",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Количество",
+          "lookupValueField": "количество",
+          "relationName": "ТЧСчФактуры",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Т ч сч фактуры",
+          "name": "тЧСчФактуры",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЦенаТовараL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаНачала",
+          "caption": "Дата начала",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "датаОконч",
+          "caption": "Дата оконч",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "описание",
+              "caption": "Описание",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Описание",
+          "name": "товар",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧСчФактуры",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество",
+          "name": "тЧСчФактуры",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

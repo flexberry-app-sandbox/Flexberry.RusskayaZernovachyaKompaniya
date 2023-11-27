@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-склад-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-склад-e",
+  "external": false,
+  "caption": "Склад",
+  "name": "IISRusskaya_zernovachya_kompaniyaСкладL",
+  "className": "СкладL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-склад",
+      "modelProjection": "СкладL"
+    }
+  ]
+}

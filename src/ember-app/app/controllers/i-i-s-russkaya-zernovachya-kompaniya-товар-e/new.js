@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaТоварEController from '../i-i-s-russkaya-zernovachya-kompaniya-товар-e';
+
+var IISRusskaya_zernovachya_kompaniyaТоварENewController = IISRusskaya_zernovachya_kompaniyaТоварEController;
+export default IISRusskaya_zernovachya_kompaniyaТоварENewController;

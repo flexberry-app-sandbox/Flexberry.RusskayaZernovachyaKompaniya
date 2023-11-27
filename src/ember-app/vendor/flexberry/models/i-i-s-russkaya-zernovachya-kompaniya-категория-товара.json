@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaКатегорияТовара",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+  "className": "КатегорияТовара",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодКатегории",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КатегорияТовараE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+      "attrs": [
+        {
+          "name": "кодКатегории",
+          "caption": "Код категории",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КатегорияТовараL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+      "attrs": [
+        {
+          "name": "кодКатегории",
+          "caption": "Код категории",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

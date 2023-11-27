@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаEController from '../i-i-s-russkaya-zernovachya-kompaniya-строка-заказа-e';
+
+var IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаENewController = IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаEController;
+export default IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаENewController;

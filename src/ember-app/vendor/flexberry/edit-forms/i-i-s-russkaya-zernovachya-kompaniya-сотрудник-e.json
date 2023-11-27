@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Накладная",
+      "projection": "НакладнаяL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISRusskaya_zernovachya_kompaniyaСотрудникE",
+  "className": "СотрудникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "modelProjection": "СотрудникE"
+    }
+  ]
+}

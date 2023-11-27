@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Категория товара",
+  "name": "IISRusskaya_zernovachya_kompaniyaКатегорияТовараE",
+  "className": "КатегорияТовараE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+      "modelProjection": "КатегорияТовараE"
+    }
+  ]
+}

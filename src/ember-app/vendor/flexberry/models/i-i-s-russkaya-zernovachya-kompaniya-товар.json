@@ -1,0 +1,267 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaТовар",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+  "className": "Товар",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "едИзм",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодТовара",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "название",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "описание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьВНакл",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "категорияТовара",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "тЧСчФактуры",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "attrs": [
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кодТовара",
+          "caption": "Код товара",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Количество",
+          "lookupValueField": "количество",
+          "relationName": "ТЧСчФактуры",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Т ч сч фактуры",
+          "name": "тЧСчФактуры",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Цена",
+          "lookupValueField": "цена",
+          "relationName": "ЗаписьВНакл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Запись в накл",
+          "name": "записьВНакл",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+          "inverse": null
+        },
+        {
+          "lookupValue": "КодКатегории",
+          "lookupValueField": "кодКатегории",
+          "relationName": "КатегорияТовара",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодКатегории",
+              "caption": "Код категории",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Категория товара",
+          "name": "категорияТовара",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "attrs": [
+        {
+          "name": "описание",
+          "caption": "Описание",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "название",
+          "caption": "Название",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "кодТовара",
+          "caption": "Код товара",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ТЧСчФактуры",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество",
+          "name": "тЧСчФактуры",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаписьВНакл",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Цена",
+          "name": "записьВНакл",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КатегорияТовара",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "кодКатегории",
+              "caption": "Код категории",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Код категории",
+          "name": "категорияТовара",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

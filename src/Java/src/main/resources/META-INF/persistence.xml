@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>Russkaya_zernovachya_kompaniya.model.Sotrudnik</class>
+        <class>Russkaya_zernovachya_kompaniya.model.Sklad</class>
+        <class>Russkaya_zernovachya_kompaniya.model.SchetFaktura</class>
+        <class>Russkaya_zernovachya_kompaniya.model.ZapisVNakl</class>
+        <class>Russkaya_zernovachya_kompaniya.model.TCHSchFaktury</class>
+        <class>Russkaya_zernovachya_kompaniya.model.TovarNaSklade</class>
+        <class>Russkaya_zernovachya_kompaniya.model.Tovar</class>
+        <class>Russkaya_zernovachya_kompaniya.model.Kontragent</class>
+        <class>Russkaya_zernovachya_kompaniya.model.StrokaZakaza</class>
+        <class>Russkaya_zernovachya_kompaniya.model.Zakaz</class>
+        <class>Russkaya_zernovachya_kompaniya.model.CenaTovara</class>
+        <class>Russkaya_zernovachya_kompaniya.model.KategoriyaTovara</class>
+        <class>Russkaya_zernovachya_kompaniya.model.Nakladnaya</class>
+        <class>Russkaya_zernovachya_kompaniya.model.FlexberryAdvLimit</class>
+        <class>Russkaya_zernovachya_kompaniya.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>Russkaya_zernovachya_kompaniya.model.NewPlatformFlexberryServicesLock</class>
+        <class>Russkaya_zernovachya_kompaniya.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaНакладнаяEController from '../i-i-s-russkaya-zernovachya-kompaniya-накладная-e';
+
+var IISRusskaya_zernovachya_kompaniyaНакладнаяENewController = IISRusskaya_zernovachya_kompaniyaНакладнаяEController;
+export default IISRusskaya_zernovachya_kompaniyaНакладнаяENewController;

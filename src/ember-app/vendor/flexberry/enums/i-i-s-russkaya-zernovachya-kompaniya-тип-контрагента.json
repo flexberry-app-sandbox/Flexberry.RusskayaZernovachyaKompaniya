@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "className": "ТипКонтрагента",
+  "enumObjects": {
+    "Поставщик": "",
+    "Клиент": ""
+  }
+}

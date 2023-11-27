@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaКонтрагентEController from '../i-i-s-russkaya-zernovachya-kompaniya-контрагент-e';
+
+var IISRusskaya_zernovachya_kompaniyaКонтрагентENewController = IISRusskaya_zernovachya_kompaniyaКонтрагентEController;
+export default IISRusskaya_zernovachya_kompaniyaКонтрагентENewController;

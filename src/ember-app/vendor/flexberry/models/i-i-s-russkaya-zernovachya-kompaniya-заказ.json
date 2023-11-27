@@ -1,0 +1,197 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaЗаказ",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаОплаты",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаОтгрузки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состояние",
+      "type": "i-i-s-russkaya-zernovachya-kompaniya-сост-заказа",
+      "flexberryType": "СостЗаказа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ценаТовара",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+      "attrs": [
+        {
+          "name": "датаОтгрузки",
+          "caption": "Дата отгрузки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Цена",
+          "lookupValueField": "цена",
+          "relationName": "ЦенаТовара",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Цена товара",
+          "name": "ценаТовара",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Emile",
+          "lookupValueField": "emile",
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "emile",
+              "caption": "Emile",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+      "attrs": [
+        {
+          "name": "датаОтгрузки",
+          "caption": "Дата отгрузки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаОплаты",
+          "caption": "Дата оплаты",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "состояние",
+          "caption": "Состояние",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЦенаТовара",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Цена",
+          "name": "ценаТовара",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "emile",
+              "caption": "Emile",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Emile",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

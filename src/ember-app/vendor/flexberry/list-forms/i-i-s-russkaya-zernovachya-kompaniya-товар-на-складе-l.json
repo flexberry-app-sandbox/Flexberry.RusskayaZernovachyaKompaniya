@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе-e",
+  "external": false,
+  "caption": "Товар на складе",
+  "name": "IISRusskaya_zernovachya_kompaniyaТоварНаСкладеL",
+  "className": "ТоварНаСкладеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе",
+      "modelProjection": "ТоварНаСкладеL"
+    }
+  ]
+}

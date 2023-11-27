@@ -1,0 +1,121 @@
+<h3 class="ui header">{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.описание
+      class=(if (v-get validationModel "описание" "isInvalid") "error")
+      label=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.описание-caption")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-описание=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "описание" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.едИзм
+      class=(if (v-get validationModel "едИзм" "isInvalid") "error")
+      label=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.едИзм-caption")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-едИзм=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "едИзм" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.название
+      class=(if (v-get validationModel "название" "isInvalid") "error")
+      label=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.название-caption")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-название=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "название" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодТовара
+      class=(if (v-get validationModel "кодТовара" "isInvalid") "error")
+      label=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.кодТовара-caption")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-кодТовара=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодТовара" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.тЧСчФактуры-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.тЧСчФактуры
+      displayAttributeName="количество"
+      autocomplete=true
+      relationName="тЧСчФактуры"
+      projection="ТЧСчФактурыL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.тЧСчФактуры-caption")
+      readonly=readonly
+      componentName="тЧСчФактурыLookup"
+      class=(if (v-get validationModel "тЧСчФактуры" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-тЧСчФактуры=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧСчФактуры" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.записьВНакл-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.записьВНакл
+      displayAttributeName="цена"
+      autocomplete=true
+      relationName="записьВНакл"
+      projection="ЗаписьВНаклL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.записьВНакл-caption")
+      readonly=readonly
+      componentName="записьВНаклLookup"
+      class=(if (v-get validationModel "записьВНакл" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-записьВНакл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "записьВНакл" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.категорияТовара-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.категорияТовара
+      displayAttributeName="кодКатегории"
+      autocomplete=true
+      relationName="категорияТовара"
+      projection="КатегорияТовараL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-товар-e.категорияТовара-caption")
+      readonly=readonly
+      componentName="категорияТовараLookup"
+      class=(if (v-get validationModel "категорияТовара" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-товар-e-категорияТовара=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "категорияТовара" "message")}}
+  </div>
+</form>

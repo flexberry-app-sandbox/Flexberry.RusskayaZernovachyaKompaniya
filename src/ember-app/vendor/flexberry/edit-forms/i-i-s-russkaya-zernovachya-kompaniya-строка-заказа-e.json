@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Строка заказа",
+  "name": "IISRusskaya_zernovachya_kompaniyaСтрокаЗаказаE",
+  "className": "СтрокаЗаказаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-строка-заказа",
+      "modelProjection": "СтрокаЗаказаE"
+    }
+  ]
+}

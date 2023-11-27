@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник-e",
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISRusskaya_zernovachya_kompaniyaСотрудникL",
+  "className": "СотрудникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "modelProjection": "СотрудникL"
+    }
+  ]
+}

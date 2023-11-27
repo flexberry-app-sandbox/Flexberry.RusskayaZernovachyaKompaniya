@@ -1,0 +1,106 @@
+﻿{
+  "applicationCaption": "Russkaya_zernovachya_kompaniya",
+  "applicationTitle": "Russkaya_zernovachya_kompaniya",
+  "items": [
+    {
+      "link": null,
+      "menuName": "russkaya-zernovachya-kompaniya",
+      "caption": "Russkaya_zernovachya_kompaniya",
+      "title": "Russkaya_zernovachya_kompaniya",
+      "children": [
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-склад-l",
+          "menuName": null,
+          "caption": "Склад",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-l",
+          "menuName": null,
+          "caption": "Счет фактура",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл-l",
+          "menuName": null,
+          "caption": "Запись в накл",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры-l",
+          "menuName": null,
+          "caption": "Т ч сч фактуры",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-товар-на-складе-l",
+          "menuName": null,
+          "caption": "Товар на складе",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-контрагент-l",
+          "menuName": null,
+          "caption": "Контрагент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-строка-заказа-l",
+          "menuName": null,
+          "caption": "Строка заказа",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-цена-товара-l",
+          "menuName": null,
+          "caption": "Цена товара",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара-l",
+          "menuName": null,
+          "caption": "Категория товара",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-russkaya-zernovachya-kompaniya-накладная-l",
+          "menuName": null,
+          "caption": "Накладная",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

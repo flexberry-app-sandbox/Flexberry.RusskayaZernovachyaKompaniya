@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaНакладная",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+  "className": "Накладная",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяОтгрузки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "примечание",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "состНакладной",
+      "type": "i-i-s-russkaya-zernovachya-kompaniya-сост-накладной",
+      "flexberryType": "СостНакладной",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "тип",
+      "type": "i-i-s-russkaya-zernovachya-kompaniya-тип-накладной",
+      "flexberryType": "ТипНакладной",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НакладнаяE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+      "attrs": [
+        {
+          "name": "времяОтгрузки",
+          "caption": "Время отгрузки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "состНакладной",
+          "caption": "Сост накладной",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "НакладнаяL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+      "attrs": [
+        {
+          "name": "времяОтгрузки",
+          "caption": "Время отгрузки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "примечание",
+          "caption": "Примечание",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "тип",
+          "caption": "Тип",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "состНакладной",
+          "caption": "Сост накладной",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

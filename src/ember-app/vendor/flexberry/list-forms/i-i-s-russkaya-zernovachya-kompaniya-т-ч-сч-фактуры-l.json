@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры-e",
+  "external": false,
+  "caption": "Т ч сч фактуры",
+  "name": "IISRusskaya_zernovachya_kompaniyaТЧСчФактурыL",
+  "className": "ТЧСчФактурыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-т-ч-сч-фактуры",
+      "modelProjection": "ТЧСчФактурыL"
+    }
+  ]
+}

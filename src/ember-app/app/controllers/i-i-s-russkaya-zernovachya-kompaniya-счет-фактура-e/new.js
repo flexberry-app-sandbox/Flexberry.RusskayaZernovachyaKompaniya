@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaСчетФактураEController from '../i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e';
+
+var IISRusskaya_zernovachya_kompaniyaСчетФактураENewController = IISRusskaya_zernovachya_kompaniyaСчетФактураEController;
+export default IISRusskaya_zernovachya_kompaniyaСчетФактураENewController;

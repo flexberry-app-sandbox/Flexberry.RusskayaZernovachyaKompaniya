@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара-e",
+  "external": false,
+  "caption": "Категория товара",
+  "name": "IISRusskaya_zernovachya_kompaniyaКатегорияТовараL",
+  "className": "КатегорияТовараL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-категория-товара",
+      "modelProjection": "КатегорияТовараL"
+    }
+  ]
+}

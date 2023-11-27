@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaЗаписьВНаклEController from '../i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл-e';
+
+var IISRusskaya_zernovachya_kompaniyaЗаписьВНаклENewController = IISRusskaya_zernovachya_kompaniyaЗаписьВНаклEController;
+export default IISRusskaya_zernovachya_kompaniyaЗаписьВНаклENewController;

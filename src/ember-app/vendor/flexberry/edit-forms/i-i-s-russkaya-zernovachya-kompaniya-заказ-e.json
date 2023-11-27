@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЦенаТовара",
+      "projection": "ЦенаТовараL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Заказ",
+  "name": "IISRusskaya_zernovachya_kompaniyaЗаказE",
+  "className": "ЗаказE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-заказ",
+      "modelProjection": "ЗаказE"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+import IISRusskaya_zernovachya_kompaniyaСотрудникEController from '../i-i-s-russkaya-zernovachya-kompaniya-сотрудник-e';
+
+var IISRusskaya_zernovachya_kompaniyaСотрудникENewController = IISRusskaya_zernovachya_kompaniyaСотрудникEController;
+export default IISRusskaya_zernovachya_kompaniyaСотрудникENewController;

@@ -1,0 +1,1 @@
+docker-compose -p russkaya_zernovachya_kompaniya-java up -d

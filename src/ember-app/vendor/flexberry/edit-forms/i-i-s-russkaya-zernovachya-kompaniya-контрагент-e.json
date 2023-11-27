@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Контрагент",
+  "name": "IISRusskaya_zernovachya_kompaniyaКонтрагентE",
+  "className": "КонтрагентE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-контрагент",
+      "modelProjection": "КонтрагентE"
+    }
+  ]
+}

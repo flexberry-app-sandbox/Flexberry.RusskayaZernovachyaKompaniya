@@ -1,0 +1,120 @@
+<h3 class="ui header">{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.датаЗаполн-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаЗаполн
+      class=(if (v-get validationModel "датаЗаполн" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-датаЗаполн=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаЗаполн" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номер
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      label=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.номер-caption")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.контрагент-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.контрагент
+      displayAttributeName="наимОрг"
+      autocomplete=true
+      relationName="контрагент"
+      projection="КонтрагентL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.контрагент-caption")
+      readonly=readonly
+      componentName="контрагентLookup"
+      class=(if (v-get validationModel "контрагент" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-контрагент=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контрагент" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.заказ-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.заказ
+      displayAttributeName="датаОтгрузки"
+      autocomplete=true
+      relationName="заказ"
+      projection="ЗаказL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.заказ-caption")
+      readonly=readonly
+      componentName="заказLookup"
+      class=(if (v-get validationModel "заказ" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-заказ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "заказ" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.склад-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.склад
+      displayAttributeName="адрес"
+      autocomplete=true
+      relationName="склад"
+      projection="СкладL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.склад-caption")
+      readonly=readonly
+      componentName="складLookup"
+      class=(if (v-get validationModel "склад" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-склад=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "склад" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.сотрудник-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.сотрудник
+      displayAttributeName="emile"
+      autocomplete=true
+      relationName="сотрудник"
+      projection="СотрудникL"
+      title=(t "forms.i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e.сотрудник-caption")
+      readonly=readonly
+      componentName="сотрудникLookup"
+      class=(if (v-get validationModel "сотрудник" "isInvalid") "error")
+      data-test-i-i-s-russkaya-zernovachya-kompaniya-счет-фактура-e-сотрудник=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "сотрудник" "message")}}
+  </div>
+</form>

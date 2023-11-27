@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Запись в накл",
+  "name": "IISRusskaya_zernovachya_kompaniyaЗаписьВНаклE",
+  "className": "ЗаписьВНаклE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-запись-в-накл",
+      "modelProjection": "ЗаписьВНаклE"
+    }
+  ]
+}

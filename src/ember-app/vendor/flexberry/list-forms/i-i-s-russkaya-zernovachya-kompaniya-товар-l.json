@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-russkaya-zernovachya-kompaniya-товар-e",
+  "editForm": "i-i-s-russkaya-zernovachya-kompaniya-товар-e",
+  "external": false,
+  "caption": "Товар",
+  "name": "IISRusskaya_zernovachya_kompaniyaТоварL",
+  "className": "ТоварL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-товар",
+      "modelProjection": "ТоварL"
+    }
+  ]
+}

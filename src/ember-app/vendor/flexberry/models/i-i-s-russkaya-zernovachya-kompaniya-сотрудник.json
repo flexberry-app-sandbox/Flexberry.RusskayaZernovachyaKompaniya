@@ -1,0 +1,211 @@
+﻿{
+  "name": "IISRusskaya_zernovachya_kompaniyaСотрудник",
+  "modelName": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+  "className": "Сотрудник",
+  "nameSpace": "IIS.Russkaya_zernovachya_kompaniya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "emile",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "имя",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "отчество",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "табелНомер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телефон",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фамилия",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "накладная",
+      "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникE",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "attrs": [
+        {
+          "name": "emile",
+          "caption": "Emile",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "отчество",
+          "caption": "Отчество",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Примечание",
+          "lookupValueField": "примечание",
+          "relationName": "Накладная",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "примечание",
+              "caption": "Примечание",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Накладная",
+          "name": "накладная",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникL",
+      "modelName": "i-i-s-russkaya-zernovachya-kompaniya-сотрудник",
+      "attrs": [
+        {
+          "name": "emile",
+          "caption": "Emile",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фамилия",
+          "caption": "Фамилия",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "имя",
+          "caption": "Имя",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "отчество",
+          "caption": "Отчество",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Накладная",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "примечание",
+              "caption": "Примечание",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Примечание",
+          "name": "накладная",
+          "relatedTo": "i-i-s-russkaya-zernovachya-kompaniya-накладная",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
